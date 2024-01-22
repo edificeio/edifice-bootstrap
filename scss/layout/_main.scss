@@ -1,4 +1,6 @@
 main {
+  overflow: clip;
+
   &.container-fluid {
     min-height: calc(100vh - 65px);
   }
