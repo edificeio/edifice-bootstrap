@@ -42,9 +42,10 @@
   }
 
   &.is-toast {
+    padding-right: 2rem;
     z-index: 20;
     min-width: 352px;
-    max-width: 402px;
+    max-width: calc(402px - 2rem);
     box-shadow: var(--#{$prefix}box-shadow);
 
     @include bootstrap.media-breakpoint-up(xs) {
