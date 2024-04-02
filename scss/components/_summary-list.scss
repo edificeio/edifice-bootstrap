@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+
+.summary-list-item {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 12px;
+    border-left: 2px solid var(--#{$prefix}secondary-300);
+  }
+
+  &:first-child:before {
+    top: 8px;
+  }
+
+  &-date {
+    padding-left: 26px;
+  }
+
+  &-title:before {
+    content: " ";
+    border: 1.5px solid var(--#{$prefix}secondary-300);
+    border-radius: 3px;
+    background: var(--#{$prefix}white);
+    position: relative;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 8px;
+  }
+}
